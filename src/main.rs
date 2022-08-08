@@ -102,22 +102,22 @@ fn main() {
     println!("{}", hangman_title);
     // println!("{}", random_word);
 
-    let mut trys = 6;
+    let mut attempts = 6;
 
-    while trys > 0 {
-        if trys == 6 {
+    while attempts > 0 {
+        if attempts == 6 {
             println!("{}", seven);
-        } else if trys == 5 {
+        } else if attempts == 5 {
             println!("{}", six);
-        } else if trys == 4 {
+        } else if attempts == 4 {
             println!("{}", five);
-        } else if trys == 3 {
+        } else if attempts == 3 {
             println!("{}", fourth);
-        } else if trys == 2 {
+        } else if attempts == 2 {
             println!("{}", third);
-        } else if trys == 1 {
+        } else if attempts == 1 {
             println!("{}", second);
-        } else if trys == 0 {
+        } else if attempts == 0 {
             println!("{}", first);
         }
         println!(
@@ -147,7 +147,7 @@ fn main() {
                 }
             }
         } else {
-            trys -= 1;
+            attempts -= 1;
         }
     }
 }
