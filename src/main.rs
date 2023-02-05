@@ -104,21 +104,21 @@ fn main() {
 
     let mut attempts = 6;
 
-    while attempts > 0 {
+    while attempts >= 0 {
         if attempts == 6 {
-            println!("{}", seven);
+            println!("{}", first);
         } else if attempts == 5 {
-            println!("{}", six);
+            println!("{}", second);
         } else if attempts == 4 {
-            println!("{}", five);
+            println!("{}", third);
         } else if attempts == 3 {
             println!("{}", fourth);
         } else if attempts == 2 {
-            println!("{}", third);
+            println!("{}", five);
         } else if attempts == 1 {
-            println!("{}", second);
+            println!("{}", six);
         } else if attempts == 0 {
-            println!("{}", first);
+            println!("{}", seven);
         }
         println!(
             "    {} {} {} {} {} {}",
